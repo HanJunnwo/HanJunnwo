@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membuat Cinematic Keren dengan Unreal Engine 5</title>
+  <link rel="stylesheet" href="style2.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header" data-aos="fade-down">
+    <h1>Cinematic dengan Unreal Engine 5</h1>
+  </header>
+
+  <section class="article">
+    <img src="assets/images/img_ar_1.jpg" alt="Cabin in the Woods" class="article-image" data-aos="zoom-in">
+
+    <div class="article-meta" data-aos="fade-up">
+      <p>Ditulis oleh <strong>Raihan Ramadhan</strong></p>
+      <p>📅 27 April 2025</p>
+      <p>🕒 10:00 WIB</p>
+    </div>
+
+    <h2 data-aos="fade-right">Membuat Animasi Cinematic Menggunakan Unreal Engine 5</h2>
+
+    <p data-aos="fade-up">
+      Unreal Engine 5 membawa revolusi baru dalam dunia animasi dan visual cinematic. Dengan fitur-fitur seperti Lumen, Nanite, dan Control Rig, siapa pun kini bisa membuat animasi setingkat film Hollywood.
+    </p>
+
+    <h3 data-aos="fade-right">Langkah-langkah Membuat Cinematic</h3>
+
+    <p data-aos="fade-up">
+      Dalam project saya "Cabin in the Woods", saya memanfaatkan Quixel Megascans untuk membuat lingkungan realistis. Berikut langkah-langkah utamanya:
+    </p>
+
+    <ul data-aos="fade-up">
+      <li>Membangun environment dengan asset Megascans.</li>
+      <li>Menggunakan Lumen untuk pencahayaan global yang dinamis.</li>
+      <li>Menambahkan kamera cinematic dengan Sequencer.</li>
+      <li>Memberi gerakan karakter menggunakan Control Rig dan animasi custom.</li>
+      <li>Menambahkan efek visual seperti hujan, kabut, dan pencahayaan dramatis.</li>
+    </ul>
+
+    <h3 data-aos="fade-right">Mengapa Unreal Engine 5?</h3>
+
+    <p data-aos="fade-up">
+      Kelebihan Unreal Engine 5 terletak pada kemampuannya membuat dunia virtual yang sangat detail namun tetap ringan. Ini memungkinkan creator membuat cinematic berkualitas tinggi dengan workflow yang lebih cepat dan efisien.
+    </p>
+
+    <h3 data-aos="fade-right">Tips untuk Pemula</h3>
+
+    <p data-aos="fade-up">
+      Mulailah dari projek kecil. Pahami dasar environment building, pencahayaan, dan camera movement. Setelah itu, terus eksperimen dengan efek sinematik untuk menciptakan storytelling visual yang kuat.
+    </p>
+
+    <h3 data-aos="fade-right">Kesimpulan</h3>
+
+    <p data-aos="fade-up">
+      Membuat cinematic di Unreal Engine 5 adalah pengalaman yang sangat seru dan powerful. Dengan sedikit kreativitas, Anda bisa membawa dunia imajinasi menjadi kenyataan!
+    </p>
+
+    <p data-aos="fade-up"><strong>"Cabin in the Woods" hanyalah permulaan dari perjalanan panjang saya di dunia animasi digital.</strong></p>
+  </section>
+
+  <!-- Comment Section -->
+  <section class="comment-section" data-aos="fade-up">
+    <h3>Tinggalkan Komentar</h3>
+    <form class="comment-form" id="commentForm">
+      <label for="name">Nama</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="comment">Komentar</label>
+      <textarea id="comment" name="comment" rows="5" required></textarea>
+
+      <button type="submit">Kirim Komentar</button>
+    </form>
+
+    <div id="commentList"></div> <!-- Tempat komentar tampil -->
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" data-aos="fade-up">
+    <p>&copy; 2025 Raihan Ramadhan. Semua Hak Dilindungi.</p>
+    <div class="social-media">
+      <a href="#" target="_blank">Instagram</a> |
+      <a href="#" target="_blank">LinkedIn</a> |
+      <a href="#" target="_blank">GitHub</a>
+    </div>
+  </footer>
+
+  <!-- Script AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+    });
+  </script>
+
+  <!-- Script komentar -->
+  <script>
+    document.getElementById('commentForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Hindari reload
+
+      var name = document.getElementById('name').value;
+      var comment = document.getElementById('comment').value;
+
+      var commentItem = document.createElement('div');
+      commentItem.classList.add('comment-item');
+      commentItem.innerHTML = '<strong>' + name + '</strong><p>' + comment + '</p>';
+
+      document.getElementById('commentList').appendChild(commentItem);
+
+      this.reset();
+    });
+  </script>
+</body>
+</html>

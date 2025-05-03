@@ -1,0 +1,138 @@
+body {
+  background-color: #0d1117;
+  color: #e6edf3;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #041c39;
+  text-align: center;
+  padding: 2rem;
+  color: #58a6ff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.article {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.article-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 15px rgba(88, 166, 255, 0.6);
+  transition: transform 0.5s ease;
+}
+
+.article-image:hover {
+  transform: scale(1.03);
+}
+
+.article-meta {
+  font-size: 0.9rem;
+  color: #8b949e;
+  margin-bottom: 2rem;
+}
+
+h2, h3 {
+  color: #58a6ff;
+  margin-top: 2rem;
+}
+
+p, ul {
+  line-height: 1.7;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .article {
+    padding: 1rem;
+  }
+
+  .header {
+    padding: 1rem;
+  }
+}
+
+/* Comment Section */
+.comment-section {
+  background-color: #161b22;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.2);
+}
+
+.comment-section h3 {
+  color: #58a6ff;
+  margin-bottom: 1rem;
+}
+
+.comment-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #c9d1d9;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  background-color: #0d1117;
+  color: #e6edf3;
+  font-family: 'Poppins', sans-serif;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  outline: none;
+  border-color: #58a6ff;
+  box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.3);
+}
+
+.comment-form button {
+  background-color: #58a6ff;
+  color: #0d1117;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+  background-color: #1f6feb;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #041c39;
+  text-align: center;
+  padding: 1.5rem;
+  color: #8b949e;
+  margin-top: 3rem;
+  border-top: 1px solid #30363d;
+}
+
+.footer .social-media a {
+  color: #58a6ff;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .social-media a:hover {
+  color: #1f6feb;
+}
